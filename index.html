@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Personliga Webbsida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Bootstrap scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+
+<!-- Sidans huvudtitel -->
+<div class="title">
+    <h1>Harry Potter</h1>
+</div>
+
+<!-- Knappar för att filtrera hus -->
+<div class="buttons">
+    <button onclick="showHouse('all')">All</button>
+    <button onclick="showHouse('gryffindor')">Gryffindor</button>
+    <button onclick="showHouse('slytherin')">Slytherin</button>
+</div>
+
+<!-- Gryffindor container (innehåller rubrik + kort) -->
+<div class="container-g" id="all-g">
+
+    <!-- Rubrik för Gryffindor -->
+    <div class="container-gryffindor" id="gryffindor">
+        <h2>Gryffindor</h2>
+    </div>
+
+    <!-- Container för Gryffindor karaktärer -->
+    <div class="container-charcaters-gryffindor">
+
+        <!-- Harry Potter card -->
+        <div class="card-harry">
+            <img src="https://static.wikia.nocookie.net/spellcasters/images/c/cf/Harry_Potter.png/revision/latest?cb=20200810091225"
+            class="card-img-top" alt="Harry Potter">
+
+            <div class="card-body">
+                <h2 class="card-title">Harry Potter</h2>
+                <p class="card-house">House: Gryffindor</p>
+                <p class="card-actor">Actor: Daniel Radcliffe</p>
+            </div>
+        </div>
+
+        <!-- Hermione card -->
+        <div class="card-hermione">
+            <img src="https://wallpaper.dog/large/984217.jpg"
+            class="card-img-top" alt="Hermione Granger">
+
+            <div class="card-body">
+                <h2 class="card-title">Hermione Granger</h2>
+                <p class="card-house">House: Gryffindor</p>
+                <p class="card-actor">Actor: Emma Watson</p>
+            </div>
+        </div>
+
+        <!-- Ron card -->
+        <div class="card-ron">
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.HJOkfkHdrJYuzNfHghC17gHaI4"
+            class="card-img-top" alt="Ron Weasley">
+
+            <div class="card-body">
+                <h2 class="card-title">Ron Weasley</h2>
+                <p class="card-house">House: Gryffindor</p>
+                <p class="card-actor">Actor: Rupert Grint</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Slytherin container (innehåller rubrik + kort) -->
+<div class="container-s" id="all-s">
+
+    <!-- Rubrik för Slytherin -->
+    <div class="container-slytherin" id="slytherin">
+        <h2>Slytherin</h2>
+    </div>
+
+    <!-- Container för Slytherin-karaktärer -->
+    <div class="container-charcaters-slytherin">
+
+       
+        <div class="card-draco">
+            <img src="https://media.harrypotterfanzone.com/draco-malfoy-order-of-the-phoenix-portrait-5.jpg"
+            class="card-img-top" alt="Draco Malfoy">
+
+            <div class="card-body">
+                <h2 class="card-title">Draco Malfoy</h2>
+                <p class="card-house">House: Slytherin</p>
+                <p class="card-actor">Actor: Tom Felton</p>
+            </div>
+        </div>
+
+        
+        <div class="card-snape">
+            <img src="https://media.harrypotterfanzone.com/severus-snape-order-of-the-phoenix-portrait-2.jpg"
+            class="card-img-top" alt="Severus Snape">
+
+            <div class="card-body">
+                <h2 class="card-title">Severus Snape</h2>
+                <p class="card-house">House: Slytherin</p>
+                <p class="card-actor">Actor: Alan Rickman</p>
+            </div>
+        </div>
+
+        
+        <div class="card-lucius">
+            <img src="https://assets.mycast.io/actor_images/actor-lucius-malfoy-306222_large.jpg"
+            class="card-img-top" alt="Lucius Malfoy">
+
+            <div class="card-body">
+                <h2 class="card-title">Lucius Malfoy</h2>
+                <p class="card-house">House: Slytherin</p>
+                <p class="card-actor">Actor: Jason Isaacs</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Kopplar in din JavaScript-fil -->
+<script src="script.js"></script>
+
+</body>
+</html>
